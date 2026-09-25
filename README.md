@@ -74,7 +74,7 @@ To start Stage 2, run the following command on the head node:
 bash examples/qwen3_4b_stage2.sh
 ```
 
-The launch scripts set the reward option for each stage. See [examples/stage1.yaml](examples/stage1.yaml) and [examples/stage2.yaml](examples/stage2.yaml) for the full training configuration. Command-line arguments take precedence over the YAML settings.
+For additional training options, see [examples/stage1.yaml](examples/stage1.yaml) and [examples/stage2.yaml](examples/stage2.yaml).
 
 ## 💐 Acknowledgments
 
