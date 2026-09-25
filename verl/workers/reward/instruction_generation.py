@@ -81,13 +81,13 @@ class self_CustomRewardManager:
             if response_length > 0:
                 reward_tensor[index, response_length - 1] = score
             if index < self.num_examine:
-                print("【prompt】", prompt)
-                print("【response】", response)
+                print("[prompt]", prompt)
+                print("[response]", response)
                 if self.mode == "train":
-                    print("【verification_prompt】", verification_prompt)
-                    print("【verification_response】", verification_response)
-                print("【ground_truth】", ground_truth)
-                print("【reward score】", score)
+                    print("[verification_prompt]", verification_prompt)
+                    print("[verification_response]", verification_response)
+                print("[ground_truth]", ground_truth)
+                print("[reward score]", score)
 
         if self.mode == "train":
             if getattr(self, "rank", 0) == 0:
