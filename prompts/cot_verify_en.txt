@@ -1,0 +1,7 @@
+Evaluate whether the model answer follows every requirement in the user instruction. Explain the verification briefly, then output the final score as Score=\boxed{X}, where X is 0, 0.5, or 1.
+
+[User Instruction]
+{question}
+
+[Model Answer]
+{answer}
