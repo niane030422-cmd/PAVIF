@@ -80,14 +80,6 @@ bash examples/qwen3_4b_stage2.sh
 
 For additional training options, see [examples/stage1.yaml](examples/stage1.yaml) and [examples/stage2.yaml](examples/stage2.yaml).
 
-## Code organization
-
-Reward code is organized by purpose:
-
-- Verification (Stage 1): `verl/utils/reward_score/verification.py` (scoring functions) and `verl/workers/reward/verification.py` (reward manager).
-- Instruction generation (Stage 2): `verl/utils/reward_score/instruction_generation.py` (scoring functions) and `verl/workers/reward/instruction_generation.py` (reward manager).
-- Shared helpers: `verl/utils/reward_score/_common.py` for constraint checks and `verl/workers/reward/_common.py` for decoding and rollout logs.
-
 ## 💐 Acknowledgments
 
 Our implementation builds on [EasyR1](https://github.com/hiyouga/EasyR1), which is based on [veRL](https://github.com/volcengine/verl). We thank the [verl-if](https://github.com/Rainier-rq/verl-if) team for sharing their instruction-following data.
