@@ -9,8 +9,8 @@ DATA_ROOT="./data"
 OUTPUT_ROOT="./outputs"
 EXPERIMENT_NAME="qwen3_1.7b_stage2"
 
-# Start from a Stage 1 checkpoint. Replace global_step_50 as needed.
-MODEL_PATH="${OUTPUT_ROOT}/checkpoints/instruct_stage1/qwen3_1.7b_stage1/global_step_50/actor/huggingface"
+# Start from a Stage 1 checkpoint. Replace <step> with the selected checkpoint step.
+MODEL_PATH="${OUTPUT_ROOT}/checkpoints/instruct_stage1/qwen3_1.7b_stage1/global_step_<step>/actor/huggingface"
 # Keep null for a new Stage 2 run, or set a Stage 2 global_step directory to resume.
 RESUME_CHECKPOINT_PATH=null
 

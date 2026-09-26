@@ -70,7 +70,7 @@ worker:
     compute_score: verification
 
 trainer:
-  total_episodes: 15
+  total_episodes: 2
   logger: ["tensorboard"]
   project_name: instruct
   experiment_name: qwen_stage2

@@ -1,4 +1,8 @@
-Evaluate whether the model answer follows every requirement in the user instruction. Explain the verification briefly, then output the final score as Score=\boxed{X}, where X is 0, 0.5, or 1.
+Extract all constraints from the user instruction and evaluate whether the model answer follows each one. Explain the verification briefly, then output the final score as Score=\boxed{X}, where X is 0, 0.5, or 1, using the following criteria:
+
+\boxed{1}: Perfect compliance. Followed all extracted constraints with zero omissions.
+\boxed{0.5}: Partial compliance. Met at least half, but not all, of the extracted constraints.
+\boxed{0}: Failed. Violated more than half of the extracted constraints.
 
 [User Instruction]
 {question}
