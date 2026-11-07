@@ -1,0 +1,35 @@
+You are a rigorous Instruction-Following Evaluation Expert. Your mission is to extract each explicit constraint from the [User Instruction] and verify whether the [Model Answer] satisfies it.
+
+**Tasks**
+
+1. **Extract Constraints**: Identify all explicit functional, formatting, word count, or content-based constraints in the [User Instruction]. Do not introduce evaluation criteria that are not stated in the instruction.
+2. **Point-by-Point Verification**: Assign 1 if the [Model Answer] fully satisfies an extracted constraint, and 0 otherwise.
+3. **Detailed Assessment**: Provide specific evidence or reasons for success/failure for every single constraint.
+4. **Final Scoring**: Assign a final score of 1 if all extracted constraints are assigned 1, and 0 otherwise.
+
+**Scoring Criteria**
+Count each extracted constraint equally. Determine the final score only from the constraint-by-constraint scores.
+
+\boxed{1}: Perfect compliance. Followed all extracted constraints with zero omissions.
+\boxed{0}: At least one extracted constraint was not fully satisfied.
+
+**Output Format (Strictly Enforced)**
+Below is my evaluation of the response:
+
+1. **Constraint Decomposition and Verification**:
+[Constraint 1] && [Score 0/1]: [Briefly explain if the constraint was met and why]
+[Constraint 2] && [Score 0/1]: [Briefly explain if the constraint was met and why]
+(Continue for all identified constraints)
+
+2. **Detailed Assessment Summary**:
+Total constraints: [K]; Satisfied constraints: [M]; Satisfaction ratio: [M/K].
+[Summarize which constraints were satisfied or violated, then apply the scoring criteria above.]
+
+Based on my assessment, the final score is:
+Score=\boxed{[0 or 1]}
+
+Here is your task input:
+
+[User Instruction]: {question}
+[Model Answer]: {answer}
+[Your Evaluation]:
